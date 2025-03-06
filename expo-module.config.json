@@ -1,0 +1,17 @@
+{
+  "platforms": [
+    "apple",
+    "android",
+    "web"
+  ],
+  "apple": {
+    "modules": [
+      "CexSpotModule"
+    ]
+  },
+  "android": {
+    "modules": [
+      "expo.modules.cexspot.CexSpotModule"
+    ]
+  }
+}
