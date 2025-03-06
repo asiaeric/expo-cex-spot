@@ -39,5 +39,8 @@
     "expo": "*",
     "react": "*",
     "react-native": "*"
+  },
+  "publishConfig": {
+    "registry": "http://localhost:4873"
   }
 }
