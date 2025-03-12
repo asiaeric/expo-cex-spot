@@ -1,0 +1,16 @@
+module.exports = {
+  arrowParens: 'avoid',
+  bracketSameLine: false,
+  singleQuote: true,
+  trailingComma: 'all',
+  semi: false,
+  printWidth: 80,
+  endOfLine: 'lf',
+  tabWidth: 2,
+  indentStyle: 'space',
+  useTabs: true,
+  arrowParens: 'avoid',
+  bracketSameLine: false,
+  singleQuote: true,
+  trailingComma: 'all',
+}

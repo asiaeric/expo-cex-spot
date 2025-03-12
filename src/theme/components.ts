@@ -1,0 +1,217 @@
+import { ImageStyle, TextStyle, ViewStyle } from 'react-native'
+
+import {
+	deviceHeight,
+	deviceWidth,
+	moderateScale,
+} from '@/types/theme/responsive'
+import type { ComponentTheme } from '@/types/theme/theme'
+
+export default ({
+	layout,
+	backgrounds,
+	fonts,
+	gutters,
+	borders,
+	colors,
+}: ComponentTheme) => {
+	return {
+		buttonSquare: {
+			...layout.justifyCenter,
+			...layout.itemsCenter,
+			...backgrounds.neutral500,
+			...fonts.gray400,
+			...borders.rounded_8,
+			...gutters.paddingVertical_12,
+			width: moderateScale(48),
+		},
+		buttonCircle: {
+			...layout.justifyCenter,
+			...layout.itemsCenter,
+			...backgrounds.neutral500,
+			...fonts.gray400,
+			...borders.rounded_36,
+			height: moderateScale(48),
+			width: moderateScale(48),
+		},
+		button: {
+			...layout.justifyCenter,
+			...layout.itemsCenter,
+			...backgrounds.neutral500,
+			...fonts.gray400,
+			...borders.rounded_36,
+			height: moderateScale(48),
+			width: '100%',
+		},
+		buttonSmall: {
+			...layout.justifyCenter,
+			...layout.itemsCenter,
+			...backgrounds.neutral500,
+			...fonts.gray400,
+			...borders.rounded_36,
+			height: moderateScale(36),
+			width: '100%',
+		},
+		badge: {
+			...layout.justifyCenter,
+			...layout.itemsCenter,
+			...gutters.paddingHorizontal_12,
+			...gutters.paddingVertical_8,
+			...borders.rounded_16,
+		},
+		lottieIcon: {
+			width: moderateScale(160),
+			height: moderateScale(160),
+		},
+		textInput: {
+			...layout.justifyCenter,
+			...layout.itemsCenter,
+			...backgrounds.neutral500,
+			...gutters.paddingHorizontal_12,
+			...fonts.gray400,
+			...borders.rounded_36,
+			height: moderateScale(48),
+			width: '100%',
+		},
+		textInputSmall: {
+			...layout.justifyCenter,
+			...layout.itemsCenter,
+			...backgrounds.purple100,
+			...gutters.paddingHorizontal_12,
+			...fonts.gray400,
+			...borders.rounded_36,
+			height: moderateScale(36),
+			width: '100%',
+		},
+		circle250: {
+			borderRadius: 140,
+			height: 68,
+			width: 68,
+		},
+		image12: {
+			height: moderateScale(12),
+			width: moderateScale(12),
+		},
+		image16: {
+			height: moderateScale(16),
+			width: moderateScale(16),
+		},
+		image24: {
+			height: moderateScale(24),
+			width: moderateScale(24),
+		},
+		image32: {
+			height: moderateScale(32),
+			width: moderateScale(32),
+		},
+		card: {
+			...gutters.padding_16,
+			...gutters.marginBottom_16,
+			...borders.rounded_8,
+			...backgrounds.card,
+		},
+		chart: {
+			...backgrounds.card,
+			...layout.height_230,
+		},
+		chartContainer: {
+			...backgrounds.card,
+		},
+		separator: {
+			width: '100%',
+			borderBottomWidth: 1,
+			...borders.dark400,
+		},
+		aggregationBox: {
+			...layout.row,
+			...layout.justifyBetween,
+			...layout.itemsCenter,
+			...backgrounds.neutral500,
+			...borders.rounded_36,
+			...gutters.paddingHorizontal_16,
+			height: moderateScale(36),
+			maxWidth: moderateScale(120),
+		},
+		aggregationBoxTiny: {
+			...layout.row,
+			...layout.justifyBetween,
+			...layout.itemsCenter,
+			...backgrounds.neutral500,
+			...borders.rounded_36,
+			...gutters.paddingHorizontal_8,
+			height: moderateScale(20),
+			width: moderateScale(80),
+		},
+		divider: {
+			...borders.bottom_1,
+			...borders.gray400,
+			...gutters.marginVertical_32,
+		},
+		errorBox: {
+			borderWidth: 1,
+			borderColor: colors.red500,
+		},
+		containerTooltip: {
+			position: 'absolute',
+			zIndex: 1000,
+			top: -30,
+			alignItems: 'center',
+		},
+		tooltip: {
+			...gutters.paddingVertical_8,
+			...gutters.paddingHorizontal_4,
+			...backgrounds.gray200,
+		},
+		arrow: {
+			borderRightColor: 'transparent',
+			borderBottomColor: 'transparent',
+			borderLeftColor: 'transparent',
+			width: 18,
+			height: 18,
+			borderTopWidth: 9,
+			borderRightWidth: 9,
+			borderBottomWidth: 9,
+			borderLeftWidth: 9,
+			borderTopColor: backgrounds.gray200.backgroundColor,
+		},
+		yellowDot: {
+			width: 6,
+			height: 6,
+			borderRadius: 3,
+			...gutters.marginRight_4,
+			...backgrounds.orange,
+		},
+		textMax120W: {
+			maxWidth: 120,
+		},
+		filterBox: {
+			...layout.justifyCenter,
+			...layout.itemsCenter,
+			...backgrounds.purple100,
+			...borders.rounded_4,
+			...gutters.paddingHorizontal_12,
+			height: moderateScale(20),
+		},
+		headerTooltipBs: {},
+		itemTooltipBs: {
+			width: deviceWidth / 4,
+			justifyContent: 'center',
+			alignItems: 'center',
+		},
+		tooltipBs: {
+			height: deviceHeight / 2,
+			padding: 12,
+		},
+		tabBarIndicator: {
+			width: 20,
+			height: 2,
+			backgroundColor: colors.primary100,
+		},
+		bottomTabBarContainer: {
+			...layout.row,
+			...layout.itemsCenter,
+			borderTopWidth: 1,
+			borderColor: colors.gray19,
+		},
+	} as const satisfies Record<string, ImageStyle | TextStyle | ViewStyle>
+}

@@ -1,0 +1,24 @@
+{
+	"title": "Tạo tài khoản",
+	"name": "Tên",
+	"inputName": "Nhập tên của bạn",
+	"email": "Email",
+	"password": "Mật khẩu",
+	"passwordDescription": "Phải chứa chữ hoa, chữ thường, ký tự đặc biệt, số, tám ký tự trở lên",
+	"login": "Đăng nhập",
+	"inputEmail": "Nhập email của bạn",
+	"inputPassword": "Nhập mật khẩu của bạn",
+	"inputConfirmPassword": "Nhập lại mật khẩu của bạn",
+	"confirmPassword": "Xác nhận mật khẩu của bạn",
+	"signUp": "Đăng ký",
+	"includeUpperLetters": "Bao gồm chữ cái in hoa",
+	"includeLowerLetters": "Bao gồm chữ cái thường",
+	"includeNumber": "Bao gồm số",
+	"includeSpecialLetters": "Bao gồm ký tự đặc biệt",
+	"atLeast8Characters": "Ít nhất 8 ký tự",
+	"emailExist": "Email đã tồn tại",
+
+	"createAccountSuccessfully": "Tạo Tài Khoản Thành Công",
+	"invalidEmail": "Địa chỉ email không hợp lệ",
+	"passwordNotMatch": "Mật khẩu không khớp"
+}

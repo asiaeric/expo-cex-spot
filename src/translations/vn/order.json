@@ -1,0 +1,43 @@
+{
+	"bids": "Mua",
+	"asks": "Bán",
+	"actionWithSymbol": "{{action}} {{symbol}}",
+	"priceWithSymbol": "Giá({{symbol}})",
+	"amountWithSymbol": "Số lượng({{symbol}})",
+	"total": "Tổng cộng ({{symbol}})",
+	"quantity": "Số lượng",
+	"price": "Giá",
+	"available": "Khả dụng",
+	"time": "Thời gian",
+	"maxAction": "{{action}} Tối đa",
+	"estFee": "Phí ước tính",
+	"orderBook": "Sổ Lệnh",
+	"trades": "Thị trường giao dịch",
+	"marketPrice": "Giá thị trường",
+	"limit": "Giới hạn",
+	"limitDescription": "Lệnh giới hạn cho phép bạn mua hoặc bán với một mức giá cụ thể. Khi bạn đặt lệnh giới hạn, nó sẽ được thêm vào Sổ lệnh.",
+	"market": "Thị trường",
+	"marketDescription": "Lệnh thị trường cho phép bạn mua hoặc bán ngay lập tức với giá thị trường hiện tại. Số lượng và giá cuối cùng sẽ phụ thuộc vào tình hình thị trường.",
+
+	"filledWithSymbol": "Khớp ({{symbol}})",
+	"feeWithSymbol": "Phí ({{symbol}})",
+
+	"orderId": "Mã lệnh",
+	"filled": "Khớp",
+	"cancelled": "Đã huỷ",
+	"amount": "Số lượng",
+	"role": "Vai trò",
+	"fee": "Phí",
+
+	"increaseBalance": "Tăng số dư",
+	"insufficientBalance": "Không thể đặt lệnh do số dư không đủ hoặc bạn muốn tăng số dư. Chuyển tài sản từ ví khác hoặc nạp tiền để đặt",
+
+	"errorMinimumOrderAmount": "Số tiền đặt lệnh tối thiểu là {{value}}",
+	"errorPriceGreaterThan": "Giá không thể cao hơn {{value}}",
+	"errorMaximumQuantity": "Số lượng tối đa có thể mua là {{value}}",
+
+	"orderSubmittedSuccessfully": "Lệnh gửi thành công!",
+	"orderCancelled": "Lệnh huỷ thành công!",
+	"orderRejected": "Lệnh Mua Thị trường chỉ có thể khớp một phần!"
+
+}

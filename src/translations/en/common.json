@@ -1,0 +1,58 @@
+{
+	"appName": {
+		"full": "CEX Mobile"
+	},
+	"noOrder": "No Order Yet!",
+
+	"selectLanguage": "Select Language",
+	"selectTradingPair": "Select Trading Pair",
+	"selectAggregation": "Select Aggregation",
+	"selectOrderType": "Select Type of Order",
+	"adjustOrder": "adjustOrder",
+	"gotIt": "Got it",
+	"failure": "Something went wrong",
+	"confirmation": "Do you want to cancel this order?",
+	"cancel": "Cancel",
+	"yes": "Yes",
+	"no": "No",
+	"confirm": "Confirm",
+	"filters": "Filters",
+	"filterDescription": "Support history records for the last 180 days",
+	"dates": "Dates",
+	"reset": "Reset",
+	"buy": "Buy",
+	"sell": "Sell",
+	"availableBalance": "Available Balance",
+	"inUseBalance": "In-Use Balance",
+	"totalBalance": "Total Balance",
+	"market": "Market",
+	"all": "All",
+	"spot": "Spot",
+	"trade": "Trade",
+
+	"assets": "Assets",
+	"openOrders": "Open Order ({{value}})",
+	"orderHistory": "Order History",
+	"trading": "Trading",
+
+	"OneDay": "1 Day",
+	"OneWeek": "1 Week",
+	"OneMonth": "1 Month",
+	"ThreeMonths": "3 Months",
+
+	"m1": "1m",
+	"m5": "5m",
+	"m15": "15m",
+	"H1": "1H",
+	"H4": "4H",
+	"D1": "1D",
+	"W1": "1W",
+
+	"24hHigh": "24h High",
+	"24hLow": "24h Low",
+	"24hVol": "24h Vol ({{symbol}})",
+
+	"nameVol": "Name/Vol",
+	"lastPrice": "Last Price",
+	"24hChange": "24h Chg%"
+}

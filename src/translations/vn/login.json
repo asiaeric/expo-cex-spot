@@ -1,0 +1,16 @@
+{
+	"title": "Chào mừng đến với",
+	"subtitle": "$t(common:appName.full)",
+	"email": "Email",
+	"password": "Mật khẩu",
+	"login": "Đăng nhập",
+	"inputEmail": "Nhập email của bạn",
+	"inputPassword": "Nhập mật khẩu của bạn",
+	"createNewVICAccount": "Tạo Tài Khoản",
+	"orIfDontHaveAccount": "hoặc nếu bạn chưa có tài khoản",
+	"loginFailed": "Đăng nhập không thành công",
+
+	"fieldRequired": "Thông tin này không thể để trống",
+	"invalidEmail": "Địa chỉ email không hợp lệ",
+	"passwordLength": "Mật khẩu phải có ít nhất 8 ký tự"
+}

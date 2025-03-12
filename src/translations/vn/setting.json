@@ -1,0 +1,13 @@
+{
+	"settings": "Cài đặt",
+	"language": "Ngôn ngữ",
+	"wsStatus": "Trạng thái WS",
+	"firstName": "Tên",
+	"lastName": "Họ",
+	"email": "Email",
+	"account": "Tài khoản",
+	"general": "Chung",
+	"connection": "Kết nối",
+	"logOut": "Đăng xuất",
+	"confirmLogout": "Bạn đang chuẩn bị đăng xuất.\nVui lòng xác nhận hành động này để tiếp tục"
+}

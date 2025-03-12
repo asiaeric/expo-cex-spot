@@ -1,0 +1,59 @@
+{
+	"appName": {
+		"full": "CEX Mobile"
+	},
+	"noOrder": "Chưa tìm thấy giao dịch!",
+
+	"selectLanguage": "Chọn ngôn ngữ",
+	"selectTradingPair": "Chọn Cặp Giao Dịch",
+	"selectAggregation": "Chọn Giá Trị Tổng Hợp",
+	"selectOrderType": "Chọn Loại Đơn Hàng",
+	"adjustOrder": "Điều Chỉnh Đơn",
+	"gotIt": "Đã Hiểu",
+	"failure": "Đã Xảy Ra Lỗi",
+	"confirmation": "Bạn có muốn hủy đơn hàng này không?",
+	"cancel": "Hủy",
+	"yes": "Có",
+	"no": "Không",
+	"confirm": "Xác Nhận",
+	"filters": "Bộ Lọc",
+	"filterDescription": "Hỗ trợ lưu trữ hồ sơ lịch sử trong 180 ngày qua",
+	"dates": "Khoảng thời gian",
+	"reset": "Đặt Lại",
+	"buy": "Mua",
+	"sell": "Bán",
+	"market": "Thị trường",
+	"all": "Tất cả",
+	"spot": "Giao ngay",
+	"trade": "Giao dịch",
+
+	"availableBalance": "Số dư khả dụng",
+	"inUseBalance": "Số dư đang sử dụng",
+	"totalBalance": "Tổng số dư",
+
+	"assets": "Tài Sản",
+	"openOrders": "Lệnh đang mở ({{value}})",
+	"orderHistory": "Lịch sử lệnh",
+	"trading": "Lịch sử giao dịch",
+
+	"OneDay": "1 Ngày",
+	"OneWeek": "1 Tuần",
+	"OneMonth": "1 Tháng",
+	"ThreeMonths": "3 Tháng",
+
+	"m1": "1 Phút",
+	"m5": "5 Phút",
+	"m15": "15 Phút",
+	"H1": "1 Giờ",
+	"H4": "4 Giờ",
+	"D1": "1 Ngày",
+	"W1": "1 Tuần",
+
+	"24hHigh": "Cao 24h",
+	"24hLow": "Thấp 24h",
+	"24hVol": "KL 24h ({{symbol}})",
+
+	"nameVol": "Tên/KL",
+	"lastPrice": "Giá gần nhất",
+	"24hChange": "Thay đổi 24h"
+}

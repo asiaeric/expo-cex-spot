@@ -1,0 +1,24 @@
+{
+	"title": "Create an account",
+	"name": "Name",
+	"inputName": "Enter your name",
+	"email": "Email",
+	"password": "Password",
+	"passwordDescription": "Must contain uppercase, lowercase, special character, number, eight characters or more",
+	"login": "Login",
+	"inputEmail": "Enter your email",
+	"inputPassword": "Enter your password",
+	"inputConfirmPassword": "Re-Enter your password",
+	"confirmPassword": "Confirm your password",
+	"signUp": "Sign up",
+	"includeUpperLetters": "Includes an uppercase letter",
+	"includeLowerLetters": "Includes a lowercase letter",
+	"includeNumber": "Includes a number",
+	"includeSpecialLetters": "Includes special characters",
+	"atLeast8Characters": "Is at least 8 characters long",
+	"emailExist": "Email existed",
+
+	"createAccountSuccessfully": "Create Account Successfully",
+	"invalidEmail": "Invalid Email",
+	"passwordNotMatch": "Passwords do not match"
+}

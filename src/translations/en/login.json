@@ -1,0 +1,16 @@
+{
+	"title": "Welcome on",
+	"subtitle": "$t(common:appName.full)",
+	"email": "Email",
+	"password": "Password",
+	"login": "Login",
+	"inputEmail": "Enter your email",
+	"inputPassword": "Enter your password",
+	"createNewVICAccount": "Create an Account",
+	"orIfDontHaveAccount": "or if you don't have account yet",
+	"loginFailed": "Login Failed",
+
+	"fieldRequired": "{{field}} field is required",
+	"invalidEmail": "Invalid email address",
+	"passwordLength": "Password must be at least 8 characters long"
+}

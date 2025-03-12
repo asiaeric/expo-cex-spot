@@ -1,0 +1,42 @@
+{
+	"bids": "Bids",
+	"asks": "Asks",
+	"actionWithSymbol": "{{action}} {{symbol}}",
+	"priceWithSymbol": "Price({{symbol}})",
+	"amountWithSymbol": "Amount({{symbol}})",
+	"total": "Total ({{symbol}})",
+	"quantity": "Quantity",
+	"price": "Price",
+	"available": "Available",
+	"time": "Time",
+	"maxAction": "Max {{action}}",
+	"estFee": "Est Fee",
+	"orderBook": "Order Book",
+	"trades": "Trades",
+	"marketPrice": "Market Price",
+	"limit": "Limit",
+	"limitDescription": "Limit order allows you buy or sell at a specific price. When you place a limit order, it is added to the Order book.",
+	"market": "Market",
+	"marketDescription": "Market order allows you to buy or sell immediately at the current market price. The final quantity and price will depend on market availability.",
+
+	"filledWithSymbol": "Filled ({{symbol}})",
+	"feeWithSymbol": "Fee ({{symbol}})",
+
+	"orderId": "Order Id",
+	"filled": "Filled",
+	"cancelled": "Cancelled",
+	"amount": "Amount",
+	"role": "Role",
+	"fee": "Fee",
+
+	"increaseBalance": "Increase Balance",
+	"insufficientBalance": "Unable to place order due to insufficient balance or want to increase balance. Transfer assets from other wallet or deposit funds to place an order",
+
+	"errorMinimumOrderAmount": "The minimum order amount is {{value}}",
+	"errorPriceGreaterThan": "Price cannot be greater than {{value}}",
+	"errorMaximumQuantity": "The maximum quantity that can be purchased is {{value}}",
+
+	"orderSubmittedSuccessfully": "Order Submitted Successfully!",
+	"orderCancelled": "Order Cancelled!",
+	"orderRejected": "Buy Market order could only partially filled"
+}

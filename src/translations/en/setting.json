@@ -1,0 +1,13 @@
+{
+	"settings": "Settings",
+	"language": "Language",
+	"wsStatus": "WS Status",
+	"firstName": "First Name",
+	"lastName": "Last Name",
+	"email": "Email",
+	"account": "Account",
+	"general": "General",
+	"connection": "Connection",
+	"logOut": "Log out",
+	"confirmLogout": "You are about to log out.\nPlease confirm this action to continue"
+}
