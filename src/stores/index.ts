@@ -1,10 +1,10 @@
-import { createStore } from 'easy-peasy'
-import { MMKV } from 'react-native-mmkv'
+import { createStore } from "easy-peasy";
+import { MMKV } from "react-native-mmkv";
 
-import { model } from './models'
+import { model } from "./models";
 
-export const storage = new MMKV()
+export const storage = new MMKV();
 
-const store = createStore(model)
+const store = createStore(model);
 
-export default store
+export default store;

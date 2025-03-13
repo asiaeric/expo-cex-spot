@@ -1,33 +1,34 @@
-import { useStoreActions } from '@/stores/hooks'
-import { useEffect } from 'react'
-import { wsClient } from '@/CexSpot'
-import { WebSocketMessage } from '@/types/socket'
-import { OrderBookData } from '@/types'
-import TopicHelper from '@/ws/topic'
+import { useEffect } from "react";
+
+import { wsClient } from "@/CexSpot";
+import { useStoreActions } from "@/stores/hooks";
+import { OrderBookData } from "@/types";
+import { WebSocketMessage } from "@/types/socket";
+import TopicHelper from "@/ws/topic";
 
 export const useOrderBookSubscription = ({
-	symbol,
-	depth,
+  symbol,
+  depth,
 }: {
-	symbol: string | undefined
-	depth: number
+  symbol: string | undefined;
+  depth: number;
 }) => {
-	const { updateOrderBooks } = useStoreActions(store => store.orderBookModel)
+  const { updateOrderBooks } = useStoreActions((store) => store.orderBookModel);
 
-	useEffect(() => {
-		if (!symbol) {
-			return undefined
-		}
+  useEffect(() => {
+    if (!symbol) {
+      return undefined;
+    }
 
-		const topic = TopicHelper.orderBookTopic(symbol, depth || 100)
-		const callback = (msg: WebSocketMessage) => {
-			updateOrderBooks(msg.data as OrderBookData)
-		}
+    const topic = TopicHelper.orderBookTopic(symbol, depth || 100);
+    const callback = (msg: WebSocketMessage) => {
+      updateOrderBooks(msg.data as OrderBookData);
+    };
 
-		wsClient.subscribe(topic, callback)
+    wsClient.subscribe(topic, callback);
 
-		return () => {
-			wsClient.unsubscribe(topic)
-		}
-	}, [symbol])
-}
+    return () => {
+      wsClient.unsubscribe(topic);
+    };
+  }, [symbol]);
+};

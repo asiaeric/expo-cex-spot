@@ -1,6 +1,6 @@
-import { z } from 'zod'
+import { z } from "zod";
 
-import { TokenSchema } from '@/schemas'
+import { TokenSchema } from "@/schemas";
 
-type Token = z.infer<typeof TokenSchema>
-export { Token }
+type Token = z.infer<typeof TokenSchema>;
+export { Token };

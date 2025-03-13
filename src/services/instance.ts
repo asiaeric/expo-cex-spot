@@ -1,48 +1,54 @@
 /* eslint-disable no-console */
-import ky from 'ky'
+import ky from "ky";
 
-const apiUrl = process.env.EXPO_PUBLIC_API_URL
+import { VI_LANG } from "@/constants";
+import store from "@/stores";
 
-const getAuthToken = async () => {
-	return 'your-access-token'
-}
+const API_URL = "https://qc.chapi.vcex.network/api/v1/";
 
-const instance = ky.extend({
-	prefixUrl: apiUrl,
-	timeout: 10000,
-	retry: {
-		limit: 2,
-		statusCodes: [408, 500, 502, 503, 504],
-	},
-	hooks: {
-		beforeRequest: [
-			async request => {
-				const token = await getAuthToken()
-				if (token) {
-					request.headers.set('Authorization', `Bearer ${token}`)
-				}
-				request.headers.set('Content-Type', 'application/json')
-			},
-		],
-		afterResponse: [
-			async (_request, _options, response) => {
-				if (!response.ok) {
-					const errorMessage = await response.text()
-					throw new Error(`API Error ${response.status}: ${errorMessage}`)
-				}
-			},
-		],
-	},
-	throwHttpErrors: true,
-})
+const getAuthToken = () => {
+  const { userModel } = store.getState();
+  return userModel.user?.token;
+};
 
-export const handleApiError = (error: unknown) => {
-	if (error instanceof Error) {
-		console.error('API Error:', error.message)
-		return error.message
-	}
-	console.error('Unknown API Error:', error)
-	return 'An unexpected error occurred. Please try again.'
-}
+const apiClient = ky.extend({
+  prefixUrl: API_URL,
+  timeout: 10000,
+  headers: {
+    Accept: "application/json",
+  },
+  retry: {
+    limit: 2,
+    statusCodes: [408, 500, 502, 503, 504],
+  },
+  hooks: {
+    beforeRequest: [
+      async (request) => {
+        request.headers.set("X-Partner-Id", "1");
+        request.headers.set("Accept-Language", VI_LANG);
+        const token = getAuthToken();
+        if (token) {
+          request.headers.set("Authorization", `Bearer ${token}`);
+        }
+      },
+    ],
+    afterResponse: [
+      async (_request, _options, response) => {
+        if (!response.ok) {
+          throw new Error(
+            `API Error ${response.status}: ${await response.text()}`,
+          );
+        }
+      },
+    ],
+  },
+});
 
-export default instance
+export const handleApiError = (error: unknown, endpoint: string) => {
+  const message =
+    error instanceof Error ? error.message : "An unexpected error occurred.";
+  console.error(`API Error at [${endpoint}]: ${message}`);
+  return new Error(`API Error at [${endpoint}]: ${message}`);
+};
+
+export default apiClient;

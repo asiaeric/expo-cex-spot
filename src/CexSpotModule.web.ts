@@ -1,15 +1,15 @@
-import { registerWebModule, NativeModule } from 'expo'
+import { registerWebModule, NativeModule } from "expo";
 
-import { CexSpotModuleEvents } from './CexSpot.types'
+import { CexSpotModuleEvents } from "./CexSpot.types";
 
 class CexSpotModule extends NativeModule<CexSpotModuleEvents> {
-	PI = Math.PI
-	async setValueAsync(value: string): Promise<void> {
-		this.emit('onChange', { value })
-	}
-	hello() {
-		return 'Hello world! 👋'
-	}
+  PI = Math.PI;
+  async setValueAsync(value: string): Promise<void> {
+    this.emit("onChange", { value });
+  }
+  hello() {
+    return "Hello world! 👋";
+  }
 }
 
-export default registerWebModule(CexSpotModule)
+export default registerWebModule(CexSpotModule);

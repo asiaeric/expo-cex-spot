@@ -1,7 +1,7 @@
-import { z } from 'zod'
+import { z } from "zod";
 
-import { FeeSchema } from '@/schemas'
+import { FeeSchema } from "@/schemas";
 
-type Fee = z.infer<typeof FeeSchema>
+type Fee = z.infer<typeof FeeSchema>;
 
-export { Fee }
+export { Fee };

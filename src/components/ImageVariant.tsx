@@ -1,34 +1,34 @@
-import { useMemo } from 'react'
-import { Image, ImageProps, ImageSourcePropType } from 'react-native'
+import { useMemo } from "react";
+import { Image, ImageProps, ImageSourcePropType } from "react-native";
 
-import { useTheme } from '../theme'
-import type { Variant } from '../types/theme/config'
+import { useTheme } from "../theme";
+import type { Variant } from "../types/theme/config";
 
-type VariantSource = `source${Capitalize<Exclude<Variant, 'default'>>}`
+type VariantSource = `source${Capitalize<Exclude<Variant, "default">>}`;
 
 type Props = ImageProps & {
-	[variant in VariantSource]?: ImageSourcePropType
-}
+  [variant in VariantSource]?: ImageSourcePropType;
+};
 
 function ImageVariant({ source: defaultSource, ...props }: Props) {
-	const { variant } = useTheme()
+  const { variant } = useTheme();
 
-	const source = useMemo(() => {
-		const sourceVariant = `source${variant
-			.charAt(0)
-			.toUpperCase()}${variant.slice(1)}` as VariantSource
+  const source = useMemo(() => {
+    const sourceVariant = `source${variant
+      .charAt(0)
+      .toUpperCase()}${variant.slice(1)}` as VariantSource;
 
-		if (variant !== 'default' && props[sourceVariant]) {
-			try {
-				return props[sourceVariant]
-			} catch (e) {
-				return defaultSource
-			}
-		}
-		return defaultSource
-	}, [variant, defaultSource, props])
+    if (variant !== "default" && props[sourceVariant]) {
+      try {
+        return props[sourceVariant];
+      } catch (e) {
+        return defaultSource;
+      }
+    }
+    return defaultSource;
+  }, [variant, defaultSource, props]);
 
-	return <Image source={source} {...props} />
+  return <Image source={source} {...props} />;
 }
 
-export default ImageVariant
+export default ImageVariant;

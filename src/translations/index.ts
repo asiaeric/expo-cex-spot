@@ -1,46 +1,46 @@
-import i18n from 'i18next'
-import { initReactI18next } from 'react-i18next'
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
 
-import * as en from './en'
-import * as vn from './vn'
+import * as en from "./en";
+import * as vn from "./vn";
 
-import { storage } from '@/stores'
+import { storage } from "@/stores";
 
 type TupleUnion<U extends string, R extends unknown[] = []> = {
-	[S in U]: Exclude<U, S> extends never
-		? [...R, S]
-		: TupleUnion<Exclude<U, S>, [...R, S]>
-}[U]
+  [S in U]: Exclude<U, S> extends never
+    ? [...R, S]
+    : TupleUnion<Exclude<U, S>, [...R, S]>;
+}[U];
 
-const ns = Object.keys(en) as TupleUnion<keyof typeof en>
+const ns = Object.keys(en) as TupleUnion<keyof typeof en>;
 
-export const defaultNS = ns[0]
+export const defaultNS = ns[0];
 
 export const languageResources = {
-	en,
-	vn,
-}
+  en,
+  vn,
+};
 
 export const languageNames: Record<string, string> = {
-	en: 'English',
-	vn: 'Tiếng Việt',
-}
+  en: "English",
+  vn: "Tiếng Việt",
+};
 
 const initI18n = () => {
-	const savedLanguage = storage.getString('language')
-	void i18n.use(initReactI18next).init({
-		ns,
-		defaultNS,
-		resources: languageResources,
-		lng: savedLanguage || 'en',
-		fallbackLng: 'en',
-		interpolation: {
-			escapeValue: false, // not needed for react as it escapes by default
-		},
-		compatibilityJSON: 'v4',
-	})
-}
+  const savedLanguage = storage.getString("language");
+  void i18n.use(initReactI18next).init({
+    ns,
+    defaultNS,
+    resources: languageResources,
+    lng: savedLanguage || "en",
+    fallbackLng: "en",
+    interpolation: {
+      escapeValue: false, // not needed for react as it escapes by default
+    },
+    compatibilityJSON: "v4",
+  });
+};
 
-initI18n()
+initI18n();
 
-export default i18n
+export default i18n;
